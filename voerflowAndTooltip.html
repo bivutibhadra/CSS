@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>voerflowAndTooltip</title>
+
+    <style>
+div{
+height: 100px;
+width: 250px;
+background-color: blue;
+border: 1px solid red;
+overflow :auto;
+
+}
+
+.tooltip{
+    position: relative;
+}
+
+
+.tooltip .tooltipstext {
+   visibility :hidden;
+   width: 150px;
+   background-color:blueviolet;
+   color :aliceblue;
+   padding : 10px;
+   border-radius: 5px;
+   position: absolute;
+   top: 30px;
+   left: 30px;
+   z-index : 1;
+
+} 
+
+.tooltip:hover .tooltipstext{
+    visibility : visible;
+}
+
+    </style>
+</head>
+<body>
+
+    <a href="#" class="tooltip">
+        Facebook
+        <samp class ="tooltipstext">Facebook is a social media</samp>
+    </a>
+    
+<br><br>
+
+<div>
+Sit aliquyam dolor sed ea accusam magna 
+clita clita. Kasd duo sed sed labore diam ut 
+sit labore duo, no duo stet tempor at
+ takimata tempor voluptua ea sed, elitr sadipscing
+  lorem dolor gubergren sed amet eirmod. No ipsum est ipsum 
+  stet sanctus, aliquyam dolor dolor sadipscing lorem accusam 
+  lorem..
+
+</div>
+
+</body>
+</html>
